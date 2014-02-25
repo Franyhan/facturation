@@ -1,0 +1,16 @@
+{# empty Twig template #}
+
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-8">
+        <h2>{{ facture.nom }}</h2>
+        <div>{{ facture.libelle }}</div>
+        
+        <div >{{ facture.montant }}</div>
+        <div >{{ facture.date|date('d/m/Y') }}</div>
+        <div> {{ facture.type.nom }}</div>
+    </div>
+</div>
+{% endblock %}

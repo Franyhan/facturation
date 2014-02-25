@@ -1,0 +1,16 @@
+{# empty Twig template #}
+
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<div class="row">
+    {% for facture in factures %}
+    <div class="col-md-4">
+        <h2><a href="{{ path('facturation_details', {'id': facture.id}) }}">{{ facture.nom }}</a></h2>
+        <div>{{ facture.libelle }}</div>
+    </div>
+    {% else %}
+    <span>Désolé, aucun facture trouvée.</span>
+    {% endfor %}
+</div>
+{% endblock %}

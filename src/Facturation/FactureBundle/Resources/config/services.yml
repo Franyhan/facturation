@@ -1,0 +1,7 @@
+parameters:
+#    facturation_facture.example.class: Facturation\FactureBundle\Example
+
+services:
+#    facturation_facture.example:
+#        class: %facturation_facture.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

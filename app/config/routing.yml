@@ -1,0 +1,4 @@
+facturation_facture:
+    resource: "@FacturationFactureBundle/Resources/config/routing.yml"
+    prefix:   /
+

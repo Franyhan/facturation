@@ -1,0 +1,13 @@
+facturation_home:
+    pattern:  /
+    defaults: { _controller: FacturationFactureBundle:Home:index }
+    
+facturation_details:
+    path: /details/{id}
+    defaults: { _controller: FacturationFactureBundle:Home:details }
+    requirements:
+        id: \d+
+        
+facturation_facture_ajouter:
+   path: /add
+   defaults: { _controller: FacturationFactureBundle:Home:ajouter }
